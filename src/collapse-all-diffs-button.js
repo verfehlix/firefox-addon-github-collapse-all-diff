@@ -14,7 +14,7 @@ let allCollapsed = false
 
 const createCollapseButton = () => {
     const myButton = document.createElement('button')
-    myButton.innerHTML = BUTTON_TEXT_ALL_OPEN
+    myButton.textContent = BUTTON_TEXT_ALL_OPEN
 
     myButton.classList.add("btn")
     myButton.setAttribute("style", "margin-top: 10px")
@@ -25,9 +25,9 @@ const createCollapseButton = () => {
         allCollapsed = !allCollapsed
 
         if (allCollapsed) {
-            myButton.innerHTML = BUTTON_TEXT_ALL_COLLAPSED
+            myButton.textContent = BUTTON_TEXT_ALL_COLLAPSED
         } else {
-            myButton.innerHTML = BUTTON_TEXT_ALL_OPEN
+            myButton.textContent = BUTTON_TEXT_ALL_OPEN
         }
     })
 
