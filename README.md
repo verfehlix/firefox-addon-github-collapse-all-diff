@@ -1,3 +1,5 @@
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+ 
 # firefox-addon-github-collapse-all-diff
 
 A Firefox addon for adding a button to GitHub commit pages which collapses all diffs at once
