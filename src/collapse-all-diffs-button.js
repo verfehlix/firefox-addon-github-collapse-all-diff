@@ -10,14 +10,6 @@ const toggleAllFileCollapses = () => {
     document.querySelectorAll(SINGLE_FILE_COLLAPSE_SELECTOR).forEach(btn => { btn.click() })
 }
 
-const updateButtonText = (allCollapsed) => {
-    if (allCollapsed) {
-        myButton.innerHTML = BUTTON_TEXT_ALL_COLLAPSED
-    } else {
-        myButton.innerHTML = BUTTON_TEXT_ALL_OPEN
-    }
-}
-
 let allCollapsed = false
 
 const createCollapseButton = () => {
@@ -32,7 +24,11 @@ const createCollapseButton = () => {
 
         allCollapsed = !allCollapsed
 
-        updateButtonText(allCollapsed)
+        if (allCollapsed) {
+            myButton.innerHTML = BUTTON_TEXT_ALL_COLLAPSED
+        } else {
+            myButton.innerHTML = BUTTON_TEXT_ALL_OPEN
+        }
     })
 
     return myButton
